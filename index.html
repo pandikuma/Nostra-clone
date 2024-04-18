@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!--Tailwind link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+
+<body class="p-3">
+    <style>
+        .vanted {
+            width: 2000px;
+            height: 150px;
+        }
+
+        .sliderbox {
+            position: relative;
+        }
+
+        .hover:hover {
+            text-decoration: underline black 1.5px;
+        }
+
+        .over {
+            padding: 20px;
+            position: absolute;
+            width: 100vw;
+            top: 30px;
+            font-size: xx-large;
+            font-weight: bolder;
+        }
+
+        .head {
+            display: flex;
+            justify-content: center;
+            font-size: 70px;
+            color: white;
+        }
+
+        .para {
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-weight: 60px;
+            font-size: medium;
+            margin-bottom: 0px;
+        }
+
+        .btn {
+            width: 130px;
+            display: flex;
+            margin-top: 10px;
+            color: black;
+            position: relative;
+            background-color: white;
+            left: 47%;
+            border-radius: 7px;
+            padding: 7px 7px 7px 7px;
+            justify-content: center;
+            align-items: center;
+            gap: 7px;
+            font-size: medium;
+        }
+
+        #arrow-left {
+            position: absolute;
+            margin-left: 90px;
+            top: 150px;
+            width: 90px;
+            bottom: 30%;
+            left: 7%;
+            font-size: 10vh;
+        }
+
+        #arrow-right {
+            position: absolute;
+            margin-right: 100px;
+            top: 150px;
+            width: 90px;
+            right: 7%;
+            font-size: 10vh;
+            bottom: 30%;
+        }
+
+        .box {
+            background-color: slateblue;
+            width: 1450px;
+            height: 350px;
+            margin-top: 200px;
+            margin-left: 10px;
+            position: relative;
+        }
+
+        .offer {
+            width: 500px;
+            margin-left: 600px;
+            position: relative;
+            bottom: 250px;
+            font-size: xx-large;
+        }
+
+        .button {
+            width: 130px;
+            margin-top: 5px;
+            background-color: white;
+            color: black;
+            height: 40px;
+            padding: 5px;
+            margin-left: 600px;
+            position: relative;
+            bottom: 250px;
+            border: 1px solid;
+            border-radius: 8px;
+            text-align: center;
+            left: 2px;
+        }
+
+        .image {
+            position: relative;
+        }
+
+        .input {
+            border: 2px solid;
+            display: flex;
+            width: 1100px;
+            margin-left: 200px;
+            margin-top: 20px;
+            height: 40px;
+        }
+
+        .sub-button {
+            width: 120px;
+            height: 40px;
+            border: 2px solid black;
+            margin-left: 700px;
+            margin-top: 20px;
+            border-radius: 5px;
+            background-color: slategrey;
+        }
+
+        .footer {
+            margin-top: 50px;
+            background-color: gray;
+            color: white;
+            height: 500px;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        .img {
+            display: flex;
+            gap: 50px;
+            padding: 5px;
+            margin-top: 40px;
+        }
+    </style>
+    <div id="closebar" class="bg-black text-white flex text-xl cursor-pointer justify-center p-3 gap-10">
+        <p>Sign Up and GET 20% OFF for your first Order</p>
+        <p>X</p>
+    </div>
+    <!--Responsive Navbar-->
+    <nav class=" bg-white text-center flex sticky top-0 z-10 justify-between p-5 ">
+        <h1 class="text-2xl text-black font-bold">Nostra</h1>
+
+        <ul class="flex gap-20">
+            <li><a class="hover:underline" href="index.html">Home</a></li>
+            <li><a class="hover:underline" href="New Arrival">New Arrival</a></li>
+            <li><a class="hover:underline" href="Most Wanted">Most Wanted</a></li>
+            <li><a class="hover:underline" href="collection.html">Collections</a></li>
+            <li><a class="hover:underline" href="contact.html">Contactus</a></li>
+        </ul>
+    </nav>
+    <div class="sliderbox ">
+        <img class="w-full" src="./slider-one (1).jpg" alt="">
+        <div class="over">
+            <h1 class="head"><img id="arrow-left" src="./arrow left.png" alt=""> Level up your style with our</h1>
+            <p class="para">Summer Collections</p><img id="arrow-right" src="arrow right.png" alt="">
+            <button class="btn">Shop Now --><i class="fa-solid fa-arrow-right" style="color: #000000;"></i></button>
+            <i class="fa-solid fa-greater-than " id="arrow-left" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-greater-than " id="arrow-right " style="color: #ffffff;"></i>
+        </div> <br>
+
+        <div>
+            <h1 class="p-5 font-bold text-2xl flex">Brands</h1>
+        </div>
+        <div class="brands flex justify-between">
+            <h1 class="ml-2 p-4 font-bold text-3xl"><img width="80" src="./shield.png" alt="">Puma</h1>
+            <h1 class="ml-2 p-4 font-bold text-3xl"><img width="80" src="./adidas.png" alt=""> Adidas</h1>
+            <h1 class="ml-2 p-4 font-bold text-3xl"><img width="80" src="./skype.png" alt=""> Simple</h1>
+            <h1 class="ml-2 p-4 font-bold text-3xl"><img width="80" src="./leaves.png" alt=""> Leaves</h1>
+            <h1 class="ml-2 p-4 font-bold text-3xl"><img width="80" src="./be-social-badge.png" alt="">Behance</h1>
+            <h1 class="ml-2 p-4 font-bold text-3xl"><img width="80" src="./twitch.png" alt=""> Twitch</h1>
+            <h1 class="ml-2 p-4 font-bold text-3xl"><img width="80" src="./herbal-spa-treatment-leaves.png"
+                    alt="">Leaves</h1>
+        </div>
+        <div class="flex justify-between p-2 text-xl mt-20">
+            <h1 class="w-80 font-extrabold text-2xl">We Provide Best
+                Customer Experiences</h1>
+            <h1>|| We ensure that our customer have the best shopping experience</h1>
+        </div>
+        <div class="flex gap-5">
+            <div class="bg-green-300 w-96 h-30 p-3">
+                <img width="40" src="./check.png" alt="">
+                <h1 class="font-bold">Original Products</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+            </div>
+            <div class="bg-green-300 w-96 h-30 p-3">
+                <img width="40" src="./happiness.png" alt="">
+                <h1 class="font-bold">Satisfaction Guarantee</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+            </div>
+            <div class="bg-green-300 w-96 h-30 p-3">
+                <img width="40" src="./pencil.png" alt="">
+                <h1 class="font-bold">New Arrival Everyday</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+            </div>
+            <div class="bg-green-300 w-96 h-30 p-3">
+                <img width="40" src="./delivery-truck.png" alt="">
+                <h1 class="font-bold">Fast & Free Shipping</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+            </div>
+        </div>
+    </div>
+    <div class="mt-10 ">
+        <h1 class="font-bold text-3xl">New Arrivals</h1>
+        <div class="mt-5 flex justify-between">
+            <div class="flex gap-20">
+                <div>
+                    <img width="300" height="80" src="./f1.jpg" alt="">
+                </div>
+                <div>
+                    <img width="300" height="80" src="./f2.jpg" alt="">
+                </div>
+                <div>
+                    <img width="300" height="80" src="./f3.jpg" alt="">
+                </div>
+                <div>
+                    <img width="300" height="80" src="./f4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="vanted border-collapse mt-1 w-full">
+            <h1 class="font-bold text-3xl ">Most Wanted</h1>
+            <div class="mt-5 grid grid-cols-7 justify-between gap-10">
+                <div class="w-dvw">
+                    <img class="w-full" src="./f1.jpg" alt="">
+                </div>
+                <div class="w-dvw">
+                    <img src="./f2.jpg" alt="">
+                </div>
+                <div class="w-dvw">
+                    <img src="./f3.jpg" alt="">
+                </div>
+                <div class="w-dvw">
+                    <img src="./f4.jpg" alt="">
+                </div>
+                <div class="w-dvw">
+                    <img src="./f5.jpg" alt="">
+                </div>
+                <div class="w-dvw">
+                    <img src="./f6.jpg" alt="">
+                </div>
+                <div class="w-dvw">
+                    <img src="./f7.jpg" alt="">
+                </div>
+            </div>
+        </div> <br>
+
+        <div class="box flex">
+            <div class="p-5 ml-16 text-white">
+                <div class="image">
+                    <img src="./offer.jpg" alt="">
+                </div>
+                <div class="offer">
+                    <h1>Limited Offer 35% OFF on this for the first 30 Customers </h1>
+                </div>
+                <div class="button">
+                    <button>Shop Now -></button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1 class="text-center mt-10 font-bold text-5xl">Join our News Letter</h1>
+            <h1 class="flex text-center justify-center text-3xl">Signup for our email newspaper to get exclusive
+                discounts,
+                updates, and more ></h1>
+            <input class="input" type="text">
+            <button class="sub-button">Subscribe --></button>
+        </div>
+        <div class="footer">
+            <div>
+                <h1 class="p-3 text-4xl font-bold mt-10">Nostra</h1>
+                <p class="p-2 w-3/4 text-3xl mt-8">The Standard chunk of Lorem ipsum used since the 1500s is
+                    reprodused
+                    below for
+                    those interest</p>
+            </div>
+            <div class="img">
+                <img class="w-10" src="./instagram.png" alt="">
+                <img class="w-10" src="./twitter.png" alt="">
+                <img class="w-10" src="./facebook.png" alt="">
+            </div>
+            <h1 class="p-3 mt-8 text-3xl">@ 2023 Nostra.com</h1>
+        </div>
+
+        <script src="index.js"></script>
+</body>
+
+</html>
